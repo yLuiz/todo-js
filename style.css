@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 main, .listSection {
@@ -36,7 +37,8 @@ input {
   margin-top: 50px;
   padding: 20px 25px;
 
-  background-color: #efefef;
+  background-color: #efefefc4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .containerInput {
@@ -49,6 +51,23 @@ input {
 
   width: 90%;
 
+}
+
+.containerInput label:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 0.9em;
+  font-weight: 900;
+  width: 150px;
+  min-width: 50px;
+  height: 30px;
+  padding: 0 5px;
+  background-color: rgb(0, 161, 0);
+  border-radius: 10px;
 }
 
 .inputField {
@@ -105,10 +124,11 @@ input {
   padding: 5px 10px;
   width: 80%;
   height: 50px;
+  background-color: white;
   box-shadow: 0px 2px 5px #50505070;
   margin-right: 10px;
 
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -160,8 +180,8 @@ input {
 
 .btn-add svg {
   fill: white;
-  width: 22px;
-  height: 22px;
+  max-width: 22px;
+  max-height: 22px;
 
   transition: 0.3s;
 }
